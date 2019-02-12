@@ -1,0 +1,36 @@
+{
+	"version": 3,
+	"file": "../scss/main.css",
+	"sources": [
+		"../scss/main.scss",
+		"../scss/base/_variables.scss",
+		"../scss/base/_mixins.scss",
+		"../scss/base/_base.scss",
+		"../scss/base/_normalize.scss",
+		"../scss/modules/_blocks.scss",
+		"../scss/modules/_buttons.scss",
+		"../scss/modules/_components.scss",
+		"../scss/modules/_sections.scss",
+		"../scss/modules/_typography.scss",
+		"../scss/layouts/_footer.scss",
+		"../scss/layouts/_header.scss",
+		"../scss/layouts/_nav.scss"
+	],
+	"sourcesContent": [
+		"/*\n  Bootstrap & sass theme\n */\n/* Base */\n@import \"base/_variables.scss\";\n@import \"base/_mixins.scss\";\n@import \"base/_base.scss\";\n@import \"base/_normalize.scss\";\n\n/* Modules */\n@import \"modules/_blocks.scss\";\n@import \"modules/_buttons.scss\";\n@import \"modules/_components.scss\";\n@import \"modules/_sections.scss\";\n@import \"modules/_typography.scss\";\n\n/* Layouts */\n@import \"layouts/_footer.scss\";\n@import \"layouts/_header.scss\";\n@import \"layouts/_nav.scss\";\n",
+		"",
+		"",
+		"",
+		"",
+		"",
+		"",
+		"",
+		"",
+		"",
+		"",
+		"",
+		""
+	],
+	"mappings": "AAAA;;GAEG;AACH,UAAU;AAMV,aAAa;AAOb,aAAa",
+	"names": []
+}
