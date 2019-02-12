@@ -18,6 +18,10 @@
 	],
 	"sourcesContent": [
 		"/*\n  Bootstrap & sass theme\n */\n/* Base */\n@import \"base/_variables.scss\";\n@import \"base/_mixins.scss\";\n@import \"base/_base.scss\";\n@import \"base/_normalize.scss\";\n\n/* Modules */\n@import \"modules/_blocks.scss\";\n@import \"modules/_buttons.scss\";\n@import \"modules/_components.scss\";\n@import \"modules/_sections.scss\";\n@import \"modules/_typography.scss\";\n\n/* Layouts */\n@import \"layouts/_footer.scss\";\n@import \"layouts/_header.scss\";\n@import \"layouts/_nav.scss\";\n",
+		"/* Fonts */\n$base-font-size:15px;\n$base-font-color:#666666;\n/* Background Colors */\n$primary-color:#00aff0;\n$secondary-color:#7fba00;\n$light-color:#e4eef2;\n$dark-color:#333333;\n",
+		"@mixin border-radius($radius){\n  -moz-border-radius: $radius;\n  -webkit-border-radius:$radius;\n  border-radius:$radius;\n}\n@mixin add-border($size,$color,$position){\n  @if $position== 'all'{\n    border:$size solid $color;\n  } @else if $position=='top'{\n    border-top:$size solid $color;\n}@else if $position=='bottom'{\n    border-bottom:$size solid $color;\n  }@else if $position=='right'{\n    border-right:$size solid $color;\n  }@else if $position=='left'{\n    border-left:$size solid $color;\n  }@else if $position=='top-bottom'{\n    border-top:$size solid $color;\n    border-bottom:$size solid $color;\n  }@else if $position=='right-left'{\n    border-right:$size solid $color;\n    border-left:$size solid $color;\n  }\n}\n",
+		"body{\n  font-family:\"Segoe UI\",\"Segoe WP\",\"Segoe\",sans-serif;\n  font-size:$base-font-size;\n  line-height:1.7em;\n  color: $base-font-color;\n}\na{\n  color:$primary-color;\n}\nul,li{\n  list-style:none;\n}\ninput,textarea,button{\n@include border-radius(0px);\n}\n",
+		"h1,h2,h3,h4{\n  margin-top: 0;\n}\n.page-header{\n  margin-top: 30px;\n}\n",
 		"",
 		"",
 		"",
@@ -25,12 +29,8 @@
 		"",
 		"",
 		"",
-		"",
-		"",
-		"",
-		"",
-		""
+		"/* Navbar */\n.navbar{\n  width:90%;\n  margin:auto;\n@include add-border(1px,#e7e7e7,'right-left');\n  min-height:60px;\n  background-color:#fff !important;\n  margin-bottom:30px;\n}\n.nav-item:hover{\n  background-color:$primary-color;\n}\n"
 	],
-	"mappings": "AAAA;;GAEG;AACH,UAAU;AAMV,aAAa;AAOb,aAAa",
+	"mappings": "AAAA;;GAEG;AACH,UAAU;ACHV,WAAW;AAGX,uBAAuB;;AEHvB,AAAA,IAAI,CAAA;EACF,WAAW,EAAC,wCAAyC;EACrD,SAAS,EFDK,IAAI;EEElB,WAAW,EAAC,KAAM;EAClB,KAAK,EFFU,OAAO;CEGvB;;;AACD,AAAA,CAAC,CAAA;EACC,KAAK,EFHQ,OAAO;CEIrB;;;AACD,AAAA,EAAE,EAAC,AAAA,EAAE,CAAA;EACH,UAAU,EAAC,IAAK;CACjB;;;AACD,AAAA,KAAK,EAAC,AAAA,QAAQ,EAAC,AAAA,MAAM,CAAA;EDXnB,kBAAkB,ECYG,GAAG;EDXxB,qBAAqB,ECWA,GAAG;EDVxB,aAAa,ECUQ,GAAG;CACzB;;;ACdD,AAAA,EAAE,EAAC,AAAA,EAAE,EAAC,AAAA,EAAE,EAAC,AAAA,EAAE,CAAA;EACT,UAAU,EAAE,CAAE;CACf;;;AACD,AAAA,YAAY,CAAA;EACV,UAAU,EAAE,IAAK;CAClB;;AJID,aAAa;AAOb,aAAa;AYhBb,YAAY;;AACZ,AAAA,OAAO,CAAA;EACL,KAAK,EAAC,GAAI;EACV,MAAM,EAAC,IAAK;EViBV,YAAY,EUhBI,GAAG,CVgBA,KAAK,CUhBJ,OAAO;EViB3B,WAAW,EUjBK,GAAG,CViBD,KAAK,CUjBH,OAAO;EAC7B,UAAU,EAAC,IAAK;EAChB,gBAAgB,EAAC,eAAgB;EACjC,aAAa,EAAC,IAAK;CACpB;;;AACD,AAAS,SAAA,AAAA,MAAM,CAAA;EACb,gBAAgB,EXNH,OAAO;CWOrB",
 	"names": []
 }

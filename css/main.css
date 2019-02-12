@@ -2,7 +2,60 @@
   Bootstrap & sass theme
  */
 /* Base */
+/* Fonts */
+/* Background Colors */
+/* line 1, /Users/jedrzejkrolikowski/PhpstormProjects/sassbs/scss/base/_base.scss */
+body {
+  font-family: "Segoe UI","Segoe WP","Segoe",sans-serif;
+  font-size: 15px;
+  line-height: 1.7em;
+  color: #666666;
+}
+
+/* line 7, /Users/jedrzejkrolikowski/PhpstormProjects/sassbs/scss/base/_base.scss */
+a {
+  color: #00aff0;
+}
+
+/* line 10, /Users/jedrzejkrolikowski/PhpstormProjects/sassbs/scss/base/_base.scss */
+ul, li {
+  list-style: none;
+}
+
+/* line 13, /Users/jedrzejkrolikowski/PhpstormProjects/sassbs/scss/base/_base.scss */
+input, textarea, button {
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 0px;
+  border-radius: 0px;
+}
+
+/* line 1, /Users/jedrzejkrolikowski/PhpstormProjects/sassbs/scss/base/_normalize.scss */
+h1, h2, h3, h4 {
+  margin-top: 0;
+}
+
+/* line 4, /Users/jedrzejkrolikowski/PhpstormProjects/sassbs/scss/base/_normalize.scss */
+.page-header {
+  margin-top: 30px;
+}
+
 /* Modules */
 /* Layouts */
+/* Navbar */
+/* line 2, /Users/jedrzejkrolikowski/PhpstormProjects/sassbs/scss/layouts/_nav.scss */
+.navbar {
+  width: 90%;
+  margin: auto;
+  border-right: 1px solid #e7e7e7;
+  border-left: 1px solid #e7e7e7;
+  min-height: 60px;
+  background-color: #fff !important;
+  margin-bottom: 30px;
+}
+
+/* line 10, /Users/jedrzejkrolikowski/PhpstormProjects/sassbs/scss/layouts/_nav.scss */
+.nav-item:hover {
+  background-color: #00aff0;
+}
 
 /*# sourceMappingURL=../css/main.map */
