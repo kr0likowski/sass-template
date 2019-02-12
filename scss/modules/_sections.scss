@@ -1,0 +1,27 @@
+/* Sections */
+section{
+  padding: 30px 0;
+}
+.section-showcase{
+height:$showcase-height;
+  background:url($showcase-img)top center no-repeat;
+}
+.showcase-content{
+  padding:90px 50px;
+  text-align: center;
+  h1,h2{
+    color:$primary-color
+  }
+}
+.section-light{
+ @include add-background($light-color);
+}
+.section-primary{
+  @include add-background($primary-color);
+}
+.section-secondary{
+  @include add-background($secondary-color);
+}
+.section-dark{
+  @include add-background($dark-color);
+}

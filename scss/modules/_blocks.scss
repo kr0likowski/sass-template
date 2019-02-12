@@ -1,0 +1,27 @@
+.block-primary{
+  @include add-background($primary-color);
+padding:50px;
+}
+.block-secondary{
+  @include add-background($secondary-color);
+  padding:50px;
+}
+.block-light{
+  @include add-background($light-color);
+  padding:20px;
+  color:$primary-color;
+}
+.block-center{
+  text-align: center;
+  i{
+    border:2px solid $primary-color;
+  }
+}
+.block-light-alt{
+  @include add-background($light-color);
+  padding:25px;
+  color:#666666;
+  button{
+    color:#666666 !important;
+  }
+}
